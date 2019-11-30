@@ -1,7 +1,7 @@
 public abstract class Animal {
-    private String name;
-    private String vid;
-    private int age;
+    protected String name;
+    protected String vid;
+    protected int age;
 
     public Animal(String name, String vid, int age) {
         this.name = name;

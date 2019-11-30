@@ -11,5 +11,19 @@ public class Main {
 //        Figure c2 = new Circle(67);
 //        System.out.println(c2.getArea());
 //        System.out.println(c2.getPerimetr());
+
+        Tigre tigre = new Tigre("Rest", "Бенгальский", 20, 80, 50);
+        tigre.Go();
+        tigre.Eat();
+        tigre.Print();
+        tigre.Sleep();
+
+        System.out.println();
+
+        Snake snake = new Snake("Robert", "Питон", 5, 10);
+        snake.Go();
+        snake.Eat();
+        snake.Print();
+        snake.Sleep();
     }
 }
