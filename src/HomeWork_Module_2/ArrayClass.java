@@ -1,4 +1,4 @@
-package HomeWork;
+package HomeWork_Module_2;
 
 class ArrayClass
 {
