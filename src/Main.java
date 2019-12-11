@@ -1,3 +1,7 @@
+import Module_2.Point;
+import Module_2.Snake;
+import Module_2.Tigre;
+
 public class Main {
     public static void main(String[] args) {
 //        Circle circle = new Circle(45);
