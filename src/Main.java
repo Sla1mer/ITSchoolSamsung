@@ -25,5 +25,8 @@ public class Main {
         snake.Eat();
         snake.Print();
         snake.Sleep();
+
+        Point<Integer> point1 = new Point<>(4,8);
+        Point<Double> point2 = new Point<>(6.5, 8.9);
     }
 }
