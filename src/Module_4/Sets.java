@@ -2,18 +2,6 @@ package Module_4;
 
 import java.util.*;
 
-class Person{
-    private String name;
-
-    public Person(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-}
-
 public class Sets {
     public static void main(String[] args) {
         HashSet<String> states = new HashSet<>();
@@ -33,9 +21,10 @@ public class Sets {
         System.out.println(states);
 
         HashSet<Person> peoples = new HashSet<>();
-        peoples.add(new Person("Mike"));
-        peoples.add(new Person("Tom"));
-        peoples.add(new Person("John"));
+        peoples.add(new Person("Mike", 1));
+        peoples.add(new Person("Tom", 2));
+        peoples.add(new Person("John", 3));
+
         for (Person p: peoples) {
             System.out.println(p.getName() + " " + p.hashCode());
         }
@@ -290,6 +279,7 @@ public class Sets {
             }
         };
 
+
         TreeSet<String> treeSet = new TreeSet<>();
         treeSet.add("Germany");
         treeSet.add("France");
@@ -311,6 +301,16 @@ public class Sets {
         System.out.println(setLower);
         SortedSet<String> setGrate = treeSet.tailSet("Germany");
         System.out.println(setGrate);
+
+        PersonComparator pcomp = new PersonComparator();
+        TreeSet<Person> people = new TreeSet<>(new PersonAgeComparator());
+        people.add(new Person("Mike", 34));
+        people.add(new Person("Tom", 15));
+        people.add(new Person("John", 78));
+
+        for (Person p : people) {
+            System.out.println(p.getName());
+        }
 //        HashSet hash = new HashSet();
 //        System.out.println(hash.hashCode());
 //        int[] mas = {1,3,4};
