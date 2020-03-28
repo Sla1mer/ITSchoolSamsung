@@ -302,6 +302,12 @@ public class Sets {
         SortedSet<String> setGrate = treeSet.tailSet("Germany");
         System.out.println(setGrate);
 
+        Iterator<String> iter = treeSet.iterator();
+
+        while (iter.hasNext()){
+            System.out.println(iter.next());
+        }
+
         PersonComparator pcomp = new PersonComparator();
         TreeSet<Person> people = new TreeSet<>(new PersonAgeComparator());
         people.add(new Person("Mike", 34));
@@ -311,6 +317,7 @@ public class Sets {
         for (Person p : people) {
             System.out.println(p.getName());
         }
+
 //        HashSet hash = new HashSet();
 //        System.out.println(hash.hashCode());
 //        int[] mas = {1,3,4};
