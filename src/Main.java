@@ -16,11 +16,6 @@ public class Main {
             t.start();
         }
 
-
-
-
-
-
 //        Thread t = Thread.currentThread();
 //        System.out.println(t.getName());
 //        t.setName("Java");
